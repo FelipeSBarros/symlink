@@ -10,3 +10,8 @@ python3 exemplo_erro.py
 #    self._accessor.symlink(target, self, target_is_directory)
 #FileNotFoundError: [Errno 2] No such file or directory: 'original.txt' -> '~/.config/linked.txt'
 ```
+Contudo, ao executar:
+```
+ln -s original.txt ~/.config/linked.txt
+```
+o link é criado sem problemas.
